@@ -48,6 +48,8 @@ header {
 
 .features {
     list-style-type: none;
+    width: 350px;
+    margin: 15px auto;
 }
 
 .features_feature {
