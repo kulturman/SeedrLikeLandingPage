@@ -89,15 +89,28 @@ header {
 }
 
 .introduction__content-block {
-    background-color: #b963dd;
     padding: 60px 0;
     text-align: center;
+}
+
+.introduction__content-and-login-block{
+    background-color: #b963dd;
 }
 
 .menu__links {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.menu__link-chrome-extension {
+    margin-right: 15px;
+    display: none;
+}
+
+.menu__link-chrome-extension a {
+    color: blue;
 }
 
 .round-button {
@@ -120,4 +133,120 @@ header {
     color: #bd5eba;
     width: 320px;
     margin: auto;
+}
+
+
+.introduction__login-block {
+    display: none;
+    padding-top: 20px;
+    background-color: white;
+    width: 35%;
+    border-top: 5px solid rebeccapurple;
+    border-radius: 5px;
+    position: absolute;
+    top: 90px;
+    height: 520px;
+    right: 30px;
+    max-width: 400px;
+}
+
+.login-block__title {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-size: .8rem;
+}
+
+.form-field {
+    height: 25px;
+}
+
+.continue-button {
+    background-color: #60b6f6;
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+}
+
+.updates-and-special-offers-block {
+    width: 80%;
+    margin: auto;
+}
+
+.social-medias-block {
+    background-color: #f1f2ff;
+    padding: 15px 0;
+}
+
+.social-media-button {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 15px;
+    width: 80%;
+}
+
+.facebook-button {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google-button {
+    background-color: white;
+}
+
+.login-block__subtitle {
+    text-align: center;
+    margin-top: 0;
+}
+
+@media(min-width: 830px) {
+    header {
+        height: 75px;
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .introduction__content-and-login-block {
+        display: flex;
+    }
+
+    .introduction__content-block {
+        width: 55%;
+    }
+
+    .menu__link-chrome-extension {
+        margin-right: 15px;
+        display: block;
+    }
+
+    .introduction__login-block {
+        display: block;
+    }
+    
+    .introduction__image-block img {
+        margin-left: 20%;
+    }
 }
